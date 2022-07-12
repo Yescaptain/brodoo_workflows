@@ -1,0 +1,17 @@
+name: caller workflow
+
+on:
+  workflow_call:
+  push:
+jobs:
+#  call-workflow-1-in-local-repo:
+#    uses: ./.github/workflows/workflow_a.yml
+#  call-workflow-2-in-local-repo:
+#    uses: ./.github/workflows/main.yml
+#  call-workflow-b-in-local-repo:
+#    uses: Yescaptain/brodoo_actions/.github/workflows/workflow_b.yml@main
+#    name: elec the guv
+#    with:
+#      username: 'brodoo'
+  call-workflow-in-another-repo:
+    uses: Yescaptain/brodoo_actions/.github/workflows/workflow_a.yml@main
